@@ -1,0 +1,14 @@
+UPDATE `creature_template` SET `lootID`='108829', requiredexpansion = 6, inhabittype=6, minlevel=113, maxlevel=113, mechanic_immune_mask=617299967, scriptname='boss_levantus', faction=14 WHERE `entry` = 108829;
+
+REPLACE INTO areatrigger_template (ID, scriptname) VALUES ('7535', 'areatrigger_gen_gust_of_wind');
+REPLACE INTO spell_areatrigger (spellmiscid, areatriggerid) values (7535, 7535);
+
+-- 109211
+UPDATE `creature_template` SET ainame='SmartAI', inhabittype=4 WHERE `entry` = 109211;
+REPLACE INTO `smart_scripts` VALUES (109211, 0, 0, 0, 60, 0, 100, 1, 1000, 1000, 0, 0, 11, 217198, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, "Smart Script");
+
+REPLACE INTO areatrigger_template (ID, scriptname) VALUES ('7542', 'areatrigger_gen_electrify');
+REPLACE INTO spell_areatrigger (spellmiscid, areatriggerid) values (7542, 7542);
+
+REPLACE INTO areatrigger_template (ID, scriptname) VALUES ('7537', 'areatrigger_gen_massive_spout');
+REPLACE INTO spell_areatrigger (spellmiscid, areatriggerid) values (7537, 7537);

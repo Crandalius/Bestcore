@@ -1,0 +1,1 @@
+UPDATE `creature_template` SET `scriptname`='npc_monk_xuen' WHERE `entry`=63508;
